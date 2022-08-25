@@ -1,8 +1,9 @@
 name: Test-Postman-Newman-ghActions
 on:
-  push:
-    branches:
-      - main
+  [push]
+  # push:
+  #   branches:
+  #     - main
 jobs:
   test-api:
     runs-on: ubuntu-latest
