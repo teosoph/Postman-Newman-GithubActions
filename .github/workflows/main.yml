@@ -21,12 +21,12 @@ jobs:
 
       # Make directory to upload the test results
       - name: Make Directory for results
-        run: mkdir -p testResults
+        run: mkdir -p docs
 
       # Run the POSTMAN collection
       - name: Run POSTMAN collection
         run: |
-          newman run store.postman_collection.json -r cli,htmlextra --reporter-htmlextra-export testResults/htmlreport.html
+          newman run store.postman_collection.json -r htmlextra --reporter-htmlextra-export docs/index.html --reporter-htmlextra-darkTheme  > docs/runreport1.html
 
       # Upload the contents of Test Results directory to workspace
       - name: Output the run Details
