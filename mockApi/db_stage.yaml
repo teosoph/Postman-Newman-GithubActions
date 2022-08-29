@@ -22,6 +22,11 @@ products:
     sku: 1.23321123e+31
     description: vkusno
     id: 4
+  - name: orange
+    price: 8e+26
+    sku: 1.23321123e+31
+    description: vkusno
+    id: 5
 orders:
   - id: 1
     name: order1
@@ -32,9 +37,6 @@ orders:
   - id: 3
     name: order2
     sku: 999921312423312
-  - name: order9
-    sku: 51111445656765
-    id: 4
 users:
   - id: 1
     firstName: Alice
@@ -109,21 +111,11 @@ users:
     status: active
     level: consumer
   - id: 9
-    firstName: Ilon
-    lastName: Mask
-    email: ilon.mask@gmail.com
-    dateOfBirth: 2001-10-99
-    emailVerified: true
+    firstName: asdasd
+    lastName: asd
+    email: asdasd.smith@gmail.com
+    dateOfBirth: 1997-10-31
+    emailVerified: false
     signUpDate: 2019-08-24
     status: active
-    level: lord
-    age: null
-  - firstName: Dream
-    lastName: Real
-    email: dream.real@gmail.com
-    dateOfBirth: 2001-10-99
-    emailVerified: true
-    signUpDate: 2019-08-24
-    status: active
-    level: lord
-    id: 10
+    level: consumer
